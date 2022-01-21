@@ -198,7 +198,7 @@ window.addEventListener('DOMContentLoaded', () => {
     //     })
     // })
 
-    axios.get('http://localhost:3000/menu') 
+    axios.get('https://maxim-prog292.github.io/Udemy_food/menu') 
     .then(response => {
         response.data.forEach(({img, altimg, title, descr, price}) => {
             new BlockMenu('.menu__field .container', img, altimg, title, descr, price).render();
